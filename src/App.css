@@ -1,0 +1,98 @@
+
+
+
+
+#root,
+body {
+  min-height: 100vh;
+  background-image: url("https://th.bing.com/th/id/R.41bc04ccc4949ee0de95784b4982eccf?rik=hcT93sq1chKuMw&riu=http%3a%2f%2fwww.dumblittleman.com%2fwp-content%2fuploads%2f2014%2f04%2fGreat-To-Do-List.jpg&ehk=75W%2f1KX1mT0HAcrayRpCkKseR5EK9xrMSNzmE4sJPdQ%3d&risl=&pid=ImgRaw&r=0");
+  background-repeat: none;
+  background-size: cover;
+  }
+
+body {
+  margin: 0;
+}
+
+#root,
+.todo-list-app {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+#root {
+  align-items: center;
+  width: 100%;
+}
+
+/* Todo list app styles  */
+.todo-list-app {
+  padding-top: 32px;
+  width: 100%;
+  max-width: 480px;
+}
+.todo-form input {
+  padding: 0 px;
+  width: 100%;
+  height:60px; 
+  border-radius: 5px; 
+}
+.todo-list ul {
+  padding: 0;
+  margin: 0;
+}
+.todo-list li {
+  list-style-type: none;
+  padding:0;
+  
+}
+.todo-item {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  padding: 10px;
+}
+.todo-item-input-wrapper {
+  flex-grow: 1;
+  padding:0 60px;
+}
+
+.todo-item input {
+  width: 100%;
+  border:0;
+  border-bottom: 1px solid transparent;
+  transition: .25s border-bottom ease-in-out;
+  height: 20px;
+  background-color: transparent;
+}
+.todo-item .todo-input-error {
+  border-bottom: 1px solid #3ce73c;
+}
+.todo-item span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: 1px solid #ececec;
+  transition: .25s all ease-in-out;
+}
+
+.todo-item-unchecked:hover {
+  background: hsla(168, 76%, 42%, .25);
+  border: 1px solid hsl(168, 76%, 42%, .25);
+}
+.item-remove {
+  display: flex;
+  padding-left: 8px;
+  padding-right: 8px;
+  font-size: 28px;
+  color: #0000f8;
+}
+
+.item-remove:hover {
+  color: rgb(0, 190, 242);
+  border: 1px solid rgb(255, 0, 123);
+  border-radius: 2px;
+}
